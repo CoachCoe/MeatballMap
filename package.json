@@ -1,0 +1,15 @@
+{
+  "name": "meatball",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile/MeatballMobile",
+    "shared"
+  ],
+  "scripts": {
+    "web": "cd web && npm run dev",
+    "mobile": "cd mobile/MeatballMobile && npm start",
+    "build": "cd web && npm run build"
+  }
+}
