@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Fix Leaflet marker images */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png);
+}
+
+.leaflet-default-shadow-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png);
+}
+
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1;
+}
+
+iframe {
+  border: none;
+  display: block;
+}

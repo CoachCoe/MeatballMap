@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover" />
+    <title>MeatballMap</title>
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- Add Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <style>
+        html, body, #root {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        #root {
+            display: flex;
+            flex-direction: column;
+        }
+        .leaflet-container {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .leaflet-control-container {
+            z-index: 1000;
+        }
+        .leaflet-pane {
+            z-index: 1;
+        }
+        .leaflet-top,
+        .leaflet-bottom {
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html> 

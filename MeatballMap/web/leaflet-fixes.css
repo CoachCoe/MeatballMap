@@ -1,0 +1,74 @@
+/* Essential Leaflet container styles */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  z-index: 1;
+  background: #f0f0f0 !important;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+/* Fix for the map container taking full height */
+html, 
+body, 
+#root {
+  height: 100vh !important;
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Ensure proper stacking context */
+.leaflet-map-pane {
+  z-index: 2;
+}
+
+.leaflet-tile-pane {
+  z-index: 1;
+}
+
+.leaflet-overlay-pane {
+  z-index: 3;
+}
+
+.leaflet-marker-pane {
+  z-index: 4;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 5;
+}
+
+.leaflet-popup-pane {
+  z-index: 6;
+}
+
+.leaflet-control {
+  z-index: 7;
+}
+
+/* Fix for tiles not loading properly */
+.leaflet-tile {
+  visibility: inherit !important;
+  height: 256px !important;
+  width: 256px !important;
+}
+
+/* Fix for Leaflet icons not showing */
+.leaflet-marker-icon {
+  background-image: none;
+}
+
+.leaflet-control-container {
+  position: relative;
+  z-index: 2;
+}
+
+.leaflet-control-container .leaflet-control {
+  margin: 10px;
+} 
